@@ -8,6 +8,10 @@ import com.jayway.restassured.response.Response;
 
 public class DeckofcardsNewJokersTests extends SetupProperties {
 
+	/**
+	 * @author Tarun Bheema
+	 * This method validates the response for the POST request call 
+	 */
 	@Test
 	public void newCardAPISucessStatusCode() {
 
@@ -15,6 +19,10 @@ public class DeckofcardsNewJokersTests extends SetupProperties {
 		assertEquals(response.statusCode(), 200);
 	}
 
+	/**
+	 * @author Tarun Bheema
+	 * This method valdiates the response body parameters for the POST request call
+	 */
 	@Test
 	public void newCardAPIResponse() {
 		

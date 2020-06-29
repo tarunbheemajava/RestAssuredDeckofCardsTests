@@ -8,13 +8,21 @@ import com.jayway.restassured.response.Response;
 
 public class DeckofcardsNewTests extends SetupProperties {
 
+	/**
+	 * @author Tarun bheema
+	 * This method validates the response status code for the GET service call
+	 */
 	@Test
 	public void newCardAPISucessStatusCode() {
 
 		Response response = restAssuredGetRequest("api/deck/new/");
 		assertEquals(response.statusCode(), 200);
 	}
-
+	
+	/**
+	 * @author Tarun Bheema
+	 * This method validates the response body parameters for the GET service call
+	 */
 	@Test
 	public void testSucessStatusRemainingResponse() {
 
@@ -23,7 +31,11 @@ public class DeckofcardsNewTests extends SetupProperties {
 		assertEquals(remaining, 52);
 
 	}
-
+	
+	/**
+	 * @author Tarun Bheema
+	 * This method validates the response body parameters for the GET service call
+	 */
 	@Test
 	public void testSucessStatusResponse() {
 
@@ -32,7 +44,11 @@ public class DeckofcardsNewTests extends SetupProperties {
 		assertEquals(success, true);
 
 	}
-
+	
+	/**
+	 * @author Tarun Bheema
+	 * This method validates the response body parameters for the GET service call
+	 */
 	@Test
 	public void testSucessShuffleResponse() {
 

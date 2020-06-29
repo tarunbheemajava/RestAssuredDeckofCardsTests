@@ -8,6 +8,10 @@ import com.jayway.restassured.response.Response;
 
 public class DeckofCardsDeckIdTests extends SetupProperties {
 
+	/**
+	 * @author Tarun Bheema
+	 * This method validates the response code
+	 */
 	@Test
 	public void newCardAPISucessStatusCode() {
 		Response response = restAssuredGetRequest("api/deck/new/");
@@ -16,6 +20,10 @@ public class DeckofCardsDeckIdTests extends SetupProperties {
 		assertEquals(response1.statusCode(), 200);
 	}
 
+	/**
+	 * @author Tarun Bheema
+	 * This method validates the response code for the incorrect deck id
+	 */
 	@Test
 	public void newCardAPIdeckNotFound() {
 		Response response1 = restAssuredGetRequest("api/deck/pnyn4gi99hrp/draw/");

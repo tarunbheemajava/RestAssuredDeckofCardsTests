@@ -1,23 +1,26 @@
 package com.test.deckofcards;
 
-import static com.jayway.restassured.RestAssured.given;
-import static org.hamcrest.Matchers.equalTo;
+import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
+
+import com.jayway.restassured.response.Response;
 
 public class DeckofcardsNewJokersTests extends SetupProperties {
 
 	@Test
 	public void newCardAPISucessStatusCode() {
-		// As you requested in the email. I tried post request different ways of rest
-		// assured code. But I am getting 301 so I am using get request.
-		given().queryParam("jokers_enabled", true).when().get("api/deck/new").then().statusCode(200);
 
+		Response response = restAssuredQueryPostRequest("api/deck/new", "jokers_enabled", true);
+		assertEquals(response.statusCode(), 200);
 	}
 
 	@Test
 	public void newCardAPIResponse() {
-		given().queryParam("jokers_enabled", true).when().get("api/deck/new").then().body("remaining", equalTo(54));
+		
+		Response response = restAssuredQueryPostRequest("api/deck/new", "jokers_enabled", true);
+		int remaining = response.jsonPath().getInt("remaining");
+		assertEquals(remaining, 54);
 	}
 
 }

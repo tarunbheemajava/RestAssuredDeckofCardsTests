@@ -30,7 +30,7 @@ Below is the output for command 'mvn clean'
 
 # How to run Test cases
 
-1.By using command prompt run 'mvn clean install'.
+#1.By using command prompt run 'mvn clean install'.
 
 Below is the result of the command 'mvn clean install'
 [INFO] Scanning for projects...
@@ -89,7 +89,7 @@ Below is the result of the command 'mvn clean install'
 [INFO] Finished at: 2020-06-29T00:20:30-04:00
 [INFO] ------------------------------------------------------------------------
 
-3.Please run the 'mvn test'
+#2.Please run the 'mvn test'
 
 Below is the result of above command 'mvn test'
 

@@ -23,10 +23,3 @@ How to run Test cases
 
 1.By using command prompt run 'mvn clean install'.
 2.Please run the 'mvn test'
-
-
-
-
-
-
-

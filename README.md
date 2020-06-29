@@ -30,68 +30,13 @@ Below is the output for command 'mvn clean'
 
 # How to run Test cases
 
-#1.By using command prompt run 'mvn clean install'.
+1.By using command prompt run 'mvn clean install'.
 
-Below is the result of the command 'mvn clean install'
-[INFO] Scanning for projects...
-[INFO]
-[INFO] ------------------< com.test.deckofcards:deckofcards >------------------
-[INFO] Building deckofcards 0.0.1-SNAPSHOT
-[INFO] --------------------------------[ jar ]---------------------------------
-[INFO]
-[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ deckofcards ---
-[INFO]
-[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ deckofcards ---
-[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
-[INFO] Copying 0 resource
-[INFO]
-[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ deckofcards ---
-[INFO] Nothing to compile - all classes are up to date
-[INFO]
-[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ deckofcards ---
-[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
-[INFO] Copying 1 resource
-[INFO]
-[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ deckofcards ---
-[INFO] Changes detected - recompiling the module!
-[WARNING] File encoding has not been set, using platform encoding Cp1252, i.e. build is platform dependent!
-[INFO] Compiling 4 source files to C:\Users\tarun\OneDrive\Documents\github\RestAssuredDeckofCardsTests\deckofcards\target\test-classes
-[INFO] /C:/Users/tarun/OneDrive/Documents/github/RestAssuredDeckofCardsTests/deckofcards/src/test/java/com/test/deckofcards/SetupProperties.java: C:\Users\tarun\OneDrive\Documents\github\RestAssuredDeckofCardsTests\deckofcards\src\test\java\com\test\deckofcards\SetupProperties.java uses or overrides a deprecated API.
-[INFO] /C:/Users/tarun/OneDrive/Documents/github/RestAssuredDeckofCardsTests/deckofcards/src/test/java/com/test/deckofcards/SetupProperties.java: Recompile with -Xlint:deprecation for details.
-[INFO]
-[INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ deckofcards ---
-[INFO]
-[INFO] -------------------------------------------------------
-[INFO]  T E S T S
-[INFO] -------------------------------------------------------
-[INFO] Running com.test.deckofcards.DeckofCardsDeckIdTests
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.962 s - in com.test.deckofcards.DeckofCardsDeckIdTests
-[INFO] Running com.test.deckofcards.DeckofcardsNewJokersTests
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.896 s - in com.test.deckofcards.DeckofcardsNewJokersTests
-[INFO] Running com.test.deckofcards.DeckofcardsNewTests
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.754 s - in com.test.deckofcards.DeckofcardsNewTests
-[INFO]
-[INFO] Results:
-[INFO]
-[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0
-[INFO]
-[INFO]
-[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ deckofcards ---
-[INFO] Building jar: C:\Users\tarun\OneDrive\Documents\github\RestAssuredDeckofCardsTests\deckofcards\target\deckofcards-0.0.1-SNAPSHOT.jar
-[INFO]
-[INFO] --- maven-install-plugin:2.4:install (default-install) @ deckofcards ---
-[INFO] Installing C:\Users\tarun\OneDrive\Documents\github\RestAssuredDeckofCardsTests\deckofcards\target\deckofcards-0.0.1-SNAPSHOT.jar to C:\Users\tarun\.m2\repository\com\test\deckofcards\deckofcards\0.0.1-SNAPSHOT\deckofcards-0.0.1-SNAPSHOT.jar
-[INFO] Installing C:\Users\tarun\OneDrive\Documents\github\RestAssuredDeckofCardsTests\deckofcards\pom.xml to C:\Users\tarun\.m2\repository\com\test\deckofcards\deckofcards\0.0.1-SNAPSHOT\deckofcards-0.0.1-SNAPSHOT.pom
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD SUCCESS
-[INFO] ------------------------------------------------------------------------
-[INFO] Total time:  10.755 s
-[INFO] Finished at: 2020-06-29T00:20:30-04:00
-[INFO] ------------------------------------------------------------------------
-
-#2.Please run the 'mvn test'
+2.Please run the 'mvn test'
 
 Below is the result of above command 'mvn test'
+
+#Results
 
 [INFO] Scanning for projects...
 [INFO]
